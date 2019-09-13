@@ -11,7 +11,7 @@
     "ws": "0.4.x"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "8.9.x"
   },
   "scripts": {
     "start": "node index.js"
