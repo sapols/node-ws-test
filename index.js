@@ -3,11 +3,11 @@ const ip = require('ip');
 var http = require("http")
 var express = require("express")
 var app = express()
-let serverPort = process.env.PORT;
+var serverPort = process.env.PORT;
 if (serverPort == null || serverPort == "") {
   serverPort = 5000 //8000;
 }
-let serverIP = ip.address();
+var serverIP = ip.address();
 
 app.use(express.static(__dirname + "/"))
 
