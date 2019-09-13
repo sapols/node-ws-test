@@ -18,10 +18,13 @@ app.use(express.static(__dirname + "/"))
 
 //var wss = new WebSocketServer({server: server})
 //var wss = new WebSocketServer({ server: server }, () => {
-const wss = new WebSocket.Server({ port: serverPort }, () => {
-   console.log(`Shawn's new WebSocket Server is running! (URL: ws://${serverIP}:${serverPort})`);
-   console.log("The signaling server is now listening on port " + serverPort);
-});
+// const wss = new WebSocket.Server({ port: serverPort }, () => {
+//    console.log(`Shawn's new WebSocket Server is running! (URL: ws://${serverIP}:${serverPort})`);
+//    console.log("The signaling server is now listening on port " + serverPort);
+// });
+const wss = new WebSocket.Server({ port: 8080 });
+console.log(`Shawn's new WebSocket Server is running! (URL: ws://${serverIP}:${serverPort})`);
+console.log("The signaling server is now listening on port " + serverPort);
 console.log("websocket server created")
 
 // wss.on("connection", function(ws) {
